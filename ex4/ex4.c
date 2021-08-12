@@ -11,6 +11,13 @@ int main(){
         break;
     case 2:
         mission2Menu();
+        break;
+    case 3:
+        mission3Menu();
+        break;
+    case 4: 
+        mission4Menu();
+        break;
     default:
         break;
     }

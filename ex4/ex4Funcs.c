@@ -69,8 +69,40 @@ void calcCircArea() {
     printf("the area of the circle is %f\n", M_PI*pow(radius,2));
 }
 void calcSquareArea() {
+
     int side = 0;
     printf("enter side size:\n");
     scanf("%d",  &side);
     printf("the area of the square is %f\n", pow(side,2));
+}
+
+
+//3. Write a program which asks the user to enter a character.
+//Check whether the user has typed a character (either uppercase or lowercase) or digit and display the result (using if…else if ladder)
+void mission3Menu() {
+    char c;
+    printf("enter your character:");
+    c =getchar();
+    c =getchar();
+    printf("the ASCII value for the char you pressed is : %d\n", c);
+}
+//4. Write a program to find all Armstrong numbers in the range of 0 and 999.
+void mission4Menu() {
+    for (int i =0; i <= 999; i++) {
+        if (i > 99 && i < 1000) {
+            checkifArmstrongNum(i);
+        }
+    }
+}
+void checkifArmstrongNum(int i) {
+    int a = 0, b = 0, c = 0, sum = 0 , j = i ;
+    a = i % 10;
+    i = i / 10;
+    b = i % 10;
+    i = i / 10;
+    c = i % 10;
+    sum = pow(a,3) + pow(b,3) + pow(c,3);
+    if (sum == j) {
+        printf("%d\n", sum);
+    }
 }
