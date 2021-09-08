@@ -1,6 +1,10 @@
-#include "ex5.h"
-
+#include "../include/ex5.h"
+#include "../include/task1.h"
+#include "../include/task2.h"
+#include "../include/task3.h"
+#include "../include/task3Structs.h"
 int main(){
+
     int missionNum = 1;
     while(missionNum >=1 && missionNum<=6) {
         printf("choose mission 1-6. other digit terminates the program\n");
