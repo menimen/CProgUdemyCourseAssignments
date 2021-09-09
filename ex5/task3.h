@@ -12,20 +12,22 @@
 #define  _POSIX_C_SOURCE 200809L
 #include <stdio.h>
 void mission3Menu();
-Item* create_item(int key, int index);
 DataBase* initializeDB();
 int isNumber(char *n);
-DataBase* initializeArr(size_t *arrSize,DataBase *db, etype element_type);
+DataBase* initializeArr(size_t *arrSize,DataBase *db);
+DataBase* ParseRequest(DataBase* db, char *str);
 void clearString(char *str);
-DataBase* EnterNumbersToDB(DataBase* db, char *str);
+void EnterNumbersToHash(DataBase** db, int *num, int* index);
 void clearDB(DataBase** db);
 Item* createItem(int *key, int *index);
-DataBase* CheckIfInHash(DataBase* db, int *num, int index);
 int generateHashCode(int num);
-void printMisision(DataBase *db);
+void printRes(DataBase *db);
 void freeHash(DataBase** db);
 void deleteList(LinkedList** node);
 void clearNode(LinkedList** head);
 void printIndeces(const short unsigned *occurences, int* indeces);
-void clearFinalArr(DataBase** db);
+void InsertItem(LinkedList** list, Item **item);
+void updateValueInList(Item** item, int* index);
+Item* FindItemInHash(LinkedList* list, int *num);
+void SyncWithFinalArr(DataBase** db, Item **item);
 #endif
