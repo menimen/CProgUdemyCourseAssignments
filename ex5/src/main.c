@@ -5,6 +5,7 @@
 #include "../include/task3.h"
 #include "../include/task3Structs.h"
 #include "../include/task5.h"
+#include "../include/task6.h"
 int main(){
 
     int missionNum = 1;
@@ -28,6 +29,9 @@ int main(){
             break;
         case 5:
             mission5Menu();
+            break;
+        case 6:
+            mission6Menu();
             break;
         default:
             break;
