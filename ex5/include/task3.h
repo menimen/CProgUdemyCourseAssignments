@@ -12,11 +12,10 @@
 #define  _POSIX_C_SOURCE 200809L
 #include <stdio.h>
 void mission3Menu();
+DataBase* ParseRequest(DataBase* db, char *str);
 DataBase* initializeDB();
-int isNumber(char *n);
 DataBase* initializeArr(size_t *arrSize,DataBase *db);
 DataBase* ParseRequest(DataBase* db, char *str);
-void clearString(char *str);
 void EnterNumbersToHash(DataBase** db, int *num, int* index);
 void clearDB(DataBase** db);
 Item* createItem(int *key, int *index);
