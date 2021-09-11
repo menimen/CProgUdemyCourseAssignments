@@ -10,7 +10,7 @@ void mission3Menu() {
         printf("Memory not allocated.\n");
         exit(0);
     }
-    getchar(); //dummy
+    //getchar(); //dummy
     printf("enter elements one by one seperated with spaces, press \"enter\" to finish: \n");
     fgets(buffer, siz, stdin);
     db = initializeDB();
