@@ -8,5 +8,8 @@
 int isNumber(char *n);
 void AssignElementsToArr(int* arr, char *buffer, const char *delim);
 void clearString(char *str);
+void printString(char *str);
 void getElements(int* arr);
+char* getstring();
+void clearSpaces(char* str);
 #endif // ex5_H_
