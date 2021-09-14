@@ -1,5 +1,5 @@
 #include "../include/task8.h"
-//
+//Write a program that replaces two or more consecutive blanks in a string by a single blank
 void mission8Menu() {
     char *str;
     str = getstring();
