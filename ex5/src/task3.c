@@ -1,5 +1,4 @@
 #include "../include/task3.h"
-#include "../include/ex5.h"
 //Write a program to find the similar elements in an array and find its occurrence. Display the array element, index of the element and its number of occurrence.
 void mission3Menu() {
     char *buffer;
