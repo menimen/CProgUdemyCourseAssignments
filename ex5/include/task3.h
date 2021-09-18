@@ -1,6 +1,7 @@
 #ifndef task3_H
 #define task3_H
 #include "task3Structs.h"
+#include "ex5.h"
 #define _GNU_SOURCE
 #include <string.h>
 #include <ctype.h>

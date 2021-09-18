@@ -9,7 +9,6 @@
 #include "../include/task8.h"
 #include "../include/task9.h"
 int main(){
-
     int missionNum = 1;
     while(missionNum >=1 && missionNum<=9) {
         printf("choose mission 1-9. other digit terminates the program\n");

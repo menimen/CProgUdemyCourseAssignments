@@ -15,7 +15,7 @@ void mission6Menu() {
 }
 char* getstring() {
     char *buffer;
-    int siz = 40;
+    int siz = 100;
     buffer = (char *)malloc(siz * sizeof(char));
     if (buffer == NULL) {
         printf("Memory not allocated.\n");
