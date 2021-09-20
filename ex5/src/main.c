@@ -8,10 +8,14 @@
 #include "../include/task7.h"
 #include "../include/task8.h"
 #include "../include/task9.h"
+#include "../include/task10.h"
+#include "../include/task11.h"
 int main(){
     int missionNum = 1;
-    while(missionNum >=1 && missionNum<=9) {
-        printf("choose mission 1-9. other digit terminates the program\n");
+    Library* lib = NULL;
+    lib = InitializeLibrary();
+    while(missionNum >=1 && missionNum<=11) {
+        printf("choose mission 1-11. other digit terminates the program\n");
         scanf("%d", &missionNum);
         getchar(); //dummy
         switch (missionNum)
@@ -43,9 +47,16 @@ int main(){
         case 9:
             mission9Menu();
             break;
+        case 10:
+            mission10Menu();
+            break;
+        case 11:
+            mission11Menu(&lib);
+            break;
         default:
             break;
         }
     }
+    clearLibrary(&lib);
     return 0;
 }

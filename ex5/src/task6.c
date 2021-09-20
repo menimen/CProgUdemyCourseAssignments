@@ -31,11 +31,14 @@ char* getstring() {
     return buffer;
 }
 void printString(char* str) {
+    int i = 0;
     while (*str != '\0') {
         printf("%c", *str);
         str++;
+        i++;
     }
     printf("\n");
+    printf("length of string is %d", i);
 }
 void printReverseString(char* str) {
     char* tmp = str;
