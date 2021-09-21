@@ -81,11 +81,11 @@ void printCheck(Order** finalOrder) {
     double Check = 0 , midCheck = 0;
     for (int i = 0; i < QUANTITYOFDIFFERENTTYPES; i++) {
         midCheck = (finalOrder[i]->item->Price)*(finalOrder[i]->amount);
-        printf("%d %s $%.2lf\n", finalOrder[i]->amount, finalOrder[i]->item->description, midCheck);
+        printf("%d %s $%.2f\n", finalOrder[i]->amount, finalOrder[i]->item->description, midCheck);
         Check += midCheck;
     }
-    printf("Tax: %.2lf\n", CalcTax(&Check));
-    printf("Amount Due $%.2lf\n", Check+CalcTax(&Check));
+    printf("Tax: %.2f\n", CalcTax(&Check));
+    printf("Amount Due $%.2f\n", Check+CalcTax(&Check));
 }
 void ShowMenu(BreakFastMenu* breakfast, Type type) {
     int i = 0, j = 0;
@@ -94,19 +94,19 @@ void ShowMenu(BreakFastMenu* breakfast, Type type) {
     case eggs:
         j = 0;
         for(; i < QUANTITYOFEGGS; i++) {
-            printf("%d-%s %.2lf\n",i+1, breakfast->menuList[j] ->items[i]->description, breakfast->menuList[j] ->items[i]->Price);
+            printf("%d-%s %.2f\n",i+1, breakfast->menuList[j] ->items[i]->description, breakfast->menuList[j] ->items[i]->Price);
         }
         break;
     case sides:
         j = 1;
         for(; i < QUANTITYOFSIDES; i++) {
-            printf("%d-%s %.2lf\n",i+1, breakfast->menuList[j] ->items[i]->description, breakfast->menuList[j] ->items[i]->Price);
+            printf("%d-%s %.2f\n",i+1, breakfast->menuList[j] ->items[i]->description, breakfast->menuList[j] ->items[i]->Price);
         }
         break;
     case drink:
         j = 2;
         for(; i < QUANTITYOFDRINKS; i++) {
-            printf("%d-%s %.2lf\n",i+1, breakfast->menuList[j] ->items[i]->description, breakfast->menuList[j] ->items[i]->Price);
+            printf("%d-%s %.2f\n",i+1, breakfast->menuList[j] ->items[i]->description, breakfast->menuList[j] ->items[i]->Price);
         }
         break;
     default:
